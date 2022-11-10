@@ -9,7 +9,7 @@ SYNOPSIS
 DESCRIPTION
   mdb-json is a utility program distributed with MDB Tools. 
 
-  It produces a CSV (comma separated value) output for the given table. Such output is suitable for importation into databases or spreadsheets.
+  It produces JSON (JavaScript Object Notation) output for the given table. Such output is suitable for processing with command line tools, serving as web site data, or importing into databases.
 
 OPTIONS
   -D, --date-format fmt     Set the date format (see strftime(3) for details).
@@ -21,7 +21,7 @@ NOTES
 
 ENVIRONMENT
   MDB_JET3_CHARSET    Defines the charset of the input JET3 (access 97) file. Default is CP1252. See iconv(1).
-  MDBICONV            Defines the output charset to use for the SQL file. Default is UTF-8. mdbtools must have been compiled with iconv.
+  MDBICONV            Defines the output charset to use for the JSON file. Default is UTF-8. mdbtools must have been compiled with iconv.
   MDBOPTS             Colon-separated list of options:
                       * debug_like
                       * debug_write
